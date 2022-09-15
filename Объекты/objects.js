@@ -15,11 +15,11 @@ const user = {
 //2.Создать копию объекта user с именем admin.
 //Добавить новому объекту поле role со значением ‘admin’.
 
-const admin = user;
-
 (function addAdminRole() {
+    const admin = user;
     admin.role = 'admin';
-}(admin));
+    return admin;
+}(user));
 
 //*Записать все значения полей объекта admin в отдельные переменные.
 //Имена переменных должны совпадать с названиями полей.
