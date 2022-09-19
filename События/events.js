@@ -11,12 +11,14 @@ text.addEventListener('input', function() {
     button.hidden=false;
 });
 
-function getInputText() {
+export function getInputText() {
   const input = document.querySelector('.input-text');
   return input.value;
 }
 
-function addPar(text) {
+getInputText();
+
+export function addPar(text) {
   const newPar = document.createElement('p');
   newPar.innerText = text;
 
@@ -29,7 +31,11 @@ function addPar(text) {
   }
 }
 
-function clearInput() {
+addPar(text);
+
+export function clearInput() {
   const input = document.querySelector('.input-text');
   input.value = '';
 }
+
+clearInput();

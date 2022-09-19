@@ -6,7 +6,7 @@
 
 const input = prompt('Напишите дату, емейл или номер телефона');
 
-(function reqexpCheck() {
+export function reqexpCheck() {
     const regexpDate = /[0-9]{1,4}[\.\/\-][0-9]{1,2}[\.\/\-][0-9]{2,4}/;
     const regexpEmail = /[a-zA-Z_\.\d]+@[a-z\d]+\.[a-z]{2,5}/;
     const regexpTelephone = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
@@ -20,4 +20,6 @@ const input = prompt('Напишите дату, емейл или номер т
     } else {
         alert('Невалидный ввод');
     }
-}(input))
+}
+
+reqexpCheck(input);

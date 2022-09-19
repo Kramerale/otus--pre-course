@@ -2,7 +2,7 @@
 //Написать программу, которая выводит
 //в консоль произведение и сумму этих чисел.
 
-function multiply(a, b) {
+export function multiply(a, b) {
     console.log (a * b);
 }
 
@@ -11,7 +11,7 @@ function multiply(a, b) {
 //суммарное количество символов в обоих строках.
 
 
-function sumLength(firstVar, secondVar) {
+export function sumLength(firstVar, secondVar) {
     let sum = firstVar.length + secondVar.length
     console.log (`Суммарное количество символов: ${sum}`);
 }
@@ -22,7 +22,7 @@ function sumLength(firstVar, secondVar) {
 
 let input = prompt ('Введите трехзначное число');
 
-(function () {
+export function sumNum() {
     let sum = 0;
     if (input.length != 3) {
         alert('Вы ввели не трехзначное число, попробуйте еще раз');
@@ -32,4 +32,6 @@ let input = prompt ('Введите трехзначное число');
         };
     };
     console.log(`Сумма цифр числа ${input}: ${sum}`);
-}(input));
+}
+
+sumNum(input);

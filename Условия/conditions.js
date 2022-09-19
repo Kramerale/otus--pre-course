@@ -1,6 +1,6 @@
 //В переменных a и b хранятся числа. Вывести в консоль наибольшее из них.
 
-function greatestNum(a, b) {
+export function greatestNum(a, b) {
     a > b ? console.log(a) : console.log(b);
 }
 
@@ -10,7 +10,7 @@ function greatestNum(a, b) {
 
 const num = +prompt ('Enter a number from 1 to 12');
 
-(function monthName() {
+export function monthName(num) {
     switch (num) {
         case 1:
             console.log('January');
@@ -49,11 +49,11 @@ const num = +prompt ('Enter a number from 1 to 12');
             console.log('December');
             break;
     }
-}(num));
+}
 
 //В переменных circle и square хранятся площади круга и квадрата соответственно.
 //Написать программу, которая определяет, поместится ли круг в квадрат.
 
-function circleInSquare(circle, square) {
-    (2*Math.sqrt(circle/Math.PI)) <= (Math.sqrt(square)) ?  console.log('Круг поместится в квадрат') : console.log('Круг не поместится в квадрат');
+export function circleInSquare(circle, square) {
+    (2*Math.sqrt(circle/Math.PI)) <= (Math.sqrt(square)) ? console.log('Круг поместится в квадрат') : console.log('Круг не поместится в квадрат');
 }

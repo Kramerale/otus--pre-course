@@ -7,7 +7,7 @@ const user = {
 //1.Запросить у пользователя ввод числа.
 //Записать введенное значение в поле age объекта user.
 
-function addUserAge(user) {
+export function addUserAge(user) {
     return {
         ...user,
         age: prompt('Enter a number')
@@ -19,7 +19,7 @@ function addUserAge(user) {
 
 const admin = addAdminRole(user);
 
-function addAdminRole(user) {
+export function addAdminRole(user) {
     return {
         ...addUserAge(user),
         role: 'admin'
@@ -29,7 +29,7 @@ function addAdminRole(user) {
 //*Записать все значения полей объекта admin в отдельные переменные.
 //Имена переменных должны совпадать с названиями полей.
 
-function printAdminFields(admin) {
+export function printAdminFields(admin) {
     let {name, age, role} = admin;
     return {name, age, role};
 }

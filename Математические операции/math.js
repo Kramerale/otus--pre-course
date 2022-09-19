@@ -2,31 +2,37 @@
 //Определить, является ли треугольник прямоугольным.
 
 
-function rectangleTriangle(a, b, c) {
+export function rectangleTriangle(a, b, c) {
     return (Math.sqrt(c) == Math.sqrt(a) + Math.sqrt(b)) ? console.log("Треугольник прямоугольный") : console.log("Треугольник не прямоугольный")
 }
+
+rectangleTriangle(1, 2, 3);
 
 //Пользователь вводит число R. Написать программу,
 //которая выведет в консоль длину окружности и площадь круга с радиусом R.
 
 const r = +prompt('Enter a number');
 
-function circleLength() {
+export function circleLength() {
     let length = 2 * Math.PI * r;
-    console.log(Math.round(length));
-};
+    console.log(`Длина окружности: ${Math.round(length)}`);
+}
 
-function circleArea() {
+circleLength();
+
+export function circleArea() {
     let area = Math.PI * Math.pow(r, 2);
-    console.log(Math.round(area));
-};
+    console.log(`Площадь окружности: ${Math.round(area)}`);
+}
+
+circleArea();
 
 //*Пользователь вводит числа a, b и c.
 //Написать программу, выводящую корни квадратного уравнения с коэффициентами a, b и c.
 
 const input = prompt('Введи числа для a b c через пробел:');
 
-(function equation() {
+export function equation() {
     [a, b, c] = input.split(' ');
     const d = Math.pow(b, 2) - 4 * a * c;
 
@@ -40,4 +46,6 @@ const input = prompt('Введи числа для a b c через пробел
     } else {
         alert('У уравнения нет корней')
     };
-}(input));
+}
+
+equation(input);

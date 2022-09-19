@@ -3,25 +3,29 @@
 
 let date = prompt('Type a date: DD.MM.YYYY');
 
-(function getWeekDay() {
+export function getWeekDay() {
     let [day, month, year] = date.split('.');
     let inputDate = new Date(Number(year), Number(--month), Number(day));
     let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday','Friday','Saturday'];
     alert(days[inputDate.getDay()]);
-}());
+}
+
+getWeekDay();
 
 //Написать программу, которая выводит в консоль количество минут, прошедшее с начала сегодняшнего дня.
 
-function secToday() {
+export function secToday() {
     const now = new Date();
     const secPass = (now.getHours() * 3600) + (now.getMinutes() * 60) + now.getSeconds();
     console.log(secPass);
 }
 
+secToday();
+
 //*В двух переменных хранятся даты рождения двух пользователей в формате ДД.ММ.ГГГГ.
 //Написать программу, которая определяет более молодого пользователя.
 
-function yongestOne(user1, user2) {
+export function yongestOne(user1, user2) {
     let [day, month, year] = user1.split('.');
     let [day2, month2, year2] = user2.split('.');
 
@@ -37,3 +41,5 @@ function yongestOne(user1, user2) {
 
     date1 < date2 ? alert('User1 is older than User2') : alert('User2 is older than User1');
 }
+
+yongestOne('12.10.1996', '20.06.1993');
