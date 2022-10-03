@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Kramerale/otus--pre-course/issues"
   },
-  "homepage": "https://github.com/Kramerale/otus--pre-course#readme"
+  "homepage": "https://github.com/Kramerale/otus--pre-course#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
