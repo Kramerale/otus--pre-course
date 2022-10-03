@@ -1,0 +1,22 @@
+{
+  "name": "otus--pre-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kramerale/otus--pre-course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kramerale/otus--pre-course/issues"
+  },
+  "homepage": "https://github.com/Kramerale/otus--pre-course#readme"
+}
