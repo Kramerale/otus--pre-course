@@ -1,14 +1,14 @@
 const button = document.querySelector('.button');
-button.hidden=true;
-button.addEventListener('click', function() {
-    const text = getInputText();
-    addPar(text);
-    clearInput();
+button.hidden = true;
+button.addEventListener('click', () => {
+  const text = getInputText();
+  addPar(text);
+  clearInput();
 });
 
 const text = document.querySelector('.input-text');
-text.addEventListener('input', function() {
-    button.hidden=false;
+text.addEventListener('input', () => {
+  button.hidden = false;
 });
 
 export function getInputText() {
