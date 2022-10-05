@@ -8,7 +8,7 @@ export function diff(a, b) {
 // Функция возвращает true, если строка состоит из одного слова и false, если из нескольких.
 
 export function isWord(str) {
-  return str = str.split(' ').length === 1;
+  return (str = str.split(" ").length === 1);
 }
 
 // Напишите функцию pow(a, x), которая вернёт значение числа a, возведённого в степень x

@@ -20,7 +20,7 @@ sumOfNewArr(arr);
 
 export function newArr() {
   let newValue = [];
-  console.log(newValue = arr.map((el) => el * 2));
+  console.log((newValue = arr.map((el) => el * 2)));
 }
 
 newArr(arr);
@@ -29,4 +29,6 @@ newArr(arr);
 
 const indexMax = arr.indexOf(Math.max(...arr));
 const indexMin = arr.indexOf(Math.min(...arr));
-console.log(`Минимальный элемент: ${arr[indexMin]}, максимальный элемент: ${arr[indexMax]}`);
+console.log(
+  `Минимальный элемент: ${arr[indexMin]}, максимальный элемент: ${arr[indexMax]}`
+);

@@ -1,7 +1,7 @@
 // Создайте объект user, содержащий поле name со значением 'John'.
 
 const user = {
-  name: 'John',
+  name: "John",
 };
 
 // 1.Запросить у пользователя ввод числа.
@@ -10,7 +10,7 @@ const user = {
 export function addUserAge(user) {
   return {
     ...user,
-    age: prompt('Enter a number'),
+    age: prompt("Enter a number"),
   };
 }
 
@@ -22,7 +22,7 @@ const admin = addAdminRole(user);
 export function addAdminRole(user) {
   return {
     ...addUserAge(user),
-    role: 'admin',
+    role: "admin",
   };
 }
 

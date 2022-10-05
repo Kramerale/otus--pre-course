@@ -24,7 +24,7 @@ export function multTable(num = 7) {
 //* Запросить у пользователя ввод числа N.
 // Вывести в консоль среднее арифметическое всех нечётных чисел от 1 до N.
 
-const input = prompt('Введите число: ');
+const input = prompt("Введите число: ");
 
 export function average(input) {
   let numberAvg = 0;

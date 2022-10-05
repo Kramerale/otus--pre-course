@@ -1,12 +1,20 @@
 // Запросите у пользователя дату в формате ДД.ММ.ГГГГ.
 // Напишите программу, выводящую день недели по введённой дате.
 
-const date = prompt('Type a date: DD.MM.YYYY');
+const date = prompt("Type a date: DD.MM.YYYY");
 
 export function getWeekDay() {
-  let [day, month, year] = date.split('.');
+  let [day, month, year] = date.split(".");
   const inputDate = new Date(Number(year), Number(--month), Number(day));
-  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
   alert(days[inputDate.getDay()]);
 }
 
@@ -16,7 +24,8 @@ getWeekDay();
 
 export function secToday() {
   const now = new Date();
-  const secPass = (now.getHours() * 3600) + (now.getMinutes() * 60) + now.getSeconds();
+  const secPass =
+    now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
   console.log(secPass);
 }
 
@@ -26,8 +35,8 @@ secToday();
 // Написать программу, которая определяет более молодого пользователя.
 
 export function yongestOne(user1, user2) {
-  const [day, month, year] = user1.split('.');
-  const [day2, month2, year2] = user2.split('.');
+  const [day, month, year] = user1.split(".");
+  const [day2, month2, year2] = user2.split(".");
 
   const date1 = new Date();
   date1.setDate(day);
@@ -39,7 +48,9 @@ export function yongestOne(user1, user2) {
   date2.setMonth(month2 - 1);
   date2.setYear(year2);
 
-  date1 < date2 ? alert('User1 is older than User2') : alert('User2 is older than User1');
+  date1 < date2
+    ? alert("User1 is older than User2")
+    : alert("User2 is older than User1");
 }
 
-yongestOne('12.10.1996', '20.06.1993');
+yongestOne("12.10.1996", "20.06.1993");

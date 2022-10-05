@@ -19,12 +19,12 @@ export function sumLength(firstVar, secondVar) {
 // которая запрашивает у пользователя ввод трёхзначного числа,
 // а потом выводит в консоль сумму цифр введённого числа.
 
-const input = prompt('Введите трехзначное число');
+const input = prompt("Введите трехзначное число");
 
 export function sumNum() {
   let sum = 0;
   if (input.length !== 3) {
-    alert('Вы ввели не трехзначное число, попробуйте еще раз');
+    alert("Вы ввели не трехзначное число, попробуйте еще раз");
   } else {
     for (let i = 0; i < input.length; i++) {
       sum += Number(input[i]);
