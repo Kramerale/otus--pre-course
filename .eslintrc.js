@@ -5,7 +5,6 @@ module.exports = {
     "jest/globals": true,
   },
   extends: ["airbnb-base", "prettier"],
-  overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
@@ -19,10 +18,11 @@ module.exports = {
     "no-useless-escape": 0,
     "no-shadow": 0,
     "no-use-before-define": 0,
-    // 'no-return-assign': 0,
-    // 'no-param-reassign': 0,
+    "no-return-assign": 0,
+    "no-param-reassign": 0,
     "no-console": 0,
     "no-alert": 0,
+    "no-undef": 0,
     "prefer-const": [
       "error",
       {
