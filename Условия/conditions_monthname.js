@@ -1,9 +1,3 @@
-// В переменных a и b хранятся числа. Вывести в консоль наибольшее из них.
-
-export function greatestNum(a, b) {
-  a > b ? console.log(a) : console.log(b);
-}
-
 // Запросить у пользователя ввод числа от 1 до 12.
 // Вывести в консоль название месяца, соответствующее этому числу
 // (1 — январь, 2 — февраль и т.д.).
@@ -51,13 +45,4 @@ export function monthName(num) {
     default:
       alert("Please, enter a number from 1 to 12");
   }
-}
-
-// В переменных circle и square хранятся площади круга и квадрата соответственно.
-// Написать программу, которая определяет, поместится ли круг в квадрат.
-
-export function circleInSquare(circle, square) {
-  2 * Math.sqrt(circle / Math.PI) <= Math.sqrt(square)
-    ? console.log("Круг поместится в квадрат")
-    : console.log("Круг не поместится в квадрат");
 }
